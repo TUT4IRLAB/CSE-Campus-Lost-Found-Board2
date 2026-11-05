@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tut-blue: #003366;
+  --color-tut-blue-dark: #002244;
+  --color-tut-blue-light: #e8f0fe;
+  --color-tut-blue-hover: #002b55;
+  --color-tut-red: #cc0000;
+  --color-tut-red-dark: #990000;
+  --color-tut-red-light: #feeceb;
+  --color-tut-gold: #f5a623;
+  --color-tut-gold-dark: #d48b11;
+  --color-tut-gold-light: #fff8e7;
+  --color-tut-slate: #1e293b;
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* High visibility accessible focus ring */
+:focus-visible {
+  outline: 2px solid #003366;
+  outline-offset: 2px;
+}
